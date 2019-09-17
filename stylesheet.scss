@@ -188,3 +188,40 @@ h1{
         }
     }
 }
+
+@media screen and (min-width: 1280px){
+    body{
+        display: grid;
+        grid-template-columns: 40% 60%;
+    }
+
+    main, header{
+        min-height: 100vh;
+    }
+
+    header{
+        background-color: $primaryColor;
+        grid-column: 1/2;
+
+        div#logo-container{
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            a#logo{
+                span#logo-team-text{
+                    display: inline;
+                }
+
+                font-size: 70px;
+                color: #fff;
+                text-align: center;
+                width: 100%;
+                margin: auto;
+            }
+        }
+    }
+
+    main{
+        grid-column: 2/3;
+    }
+}

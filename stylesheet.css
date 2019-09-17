@@ -211,4 +211,45 @@ h1 {
         grid-template-columns: 400px 250px;
   }
 }
+
+@media screen and (min-width: 1280px) {
+  body {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 40% 60%;
+        grid-template-columns: 40% 60%;
+  }
+  main, header {
+    min-height: 100vh;
+  }
+  header {
+    background-color: #162D7D;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+  }
+  header div#logo-container {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  header div#logo-container a#logo {
+    font-size: 70px;
+    color: #fff;
+    text-align: center;
+    width: 100%;
+    margin: auto;
+  }
+  header div#logo-container a#logo span#logo-team-text {
+    display: inline;
+  }
+  main {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2/3;
+  }
+}
 /*# sourceMappingURL=stylesheet.css.map */
