@@ -107,6 +107,10 @@ article.form-login-article form#login-form {
   border-radius: 8px;
 }
 
+article.form-login-article form#login-form h1#form-login-title {
+  margin: 15px auto;
+}
+
 article.form-login-article form#login-form div.input-container {
   width: 100%;
   display: -webkit-box;
