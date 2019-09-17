@@ -19,6 +19,7 @@ body, main, header, section, article {
 
 header {
   width: 100%;
+  height: 70px;
 }
 
 header div#logo-container a#logo {
@@ -30,5 +31,11 @@ header div#logo-container a#logo {
 
 header div#logo-container a#logo span#logo-team-text {
   display: none;
+}
+
+main {
+  width: 100%;
+  background-color: #f2f2f2;
+  min-height: calc(100vh - 70px);
 }
 /*# sourceMappingURL=stylesheet.css.map */
