@@ -75,10 +75,20 @@ const controller = {
         //Array of language btns
         this.langBtns = document.querySelectorAll('button.translation');
     },
-    
+
     setSelectedLang: (lang)=>{
         // set selected language
         model.selectedLanguage = lang;
+    },
+    
+    btnLang: (title) => {
+        // From btn title get lang 
+        const lang = model.languages.find(l=> l.name === title.toLowerCase())
+        console.log('Clicked btn title',lang);
+        
+        if(lang === undefined || lang === null){
+            controller.setSelectedLang(lang);
+        }
     }
 }
 
