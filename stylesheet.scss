@@ -185,10 +185,11 @@ h1{
 @media screen and (min-width: 651px){
     article{
         &.translation-conatiner{
+            width: calc(100% - 40px);
             max-width: 650px;
             display: grid;
             grid-template-rows: none;
-            grid-template-columns: 400px 250px;
+            grid-template-columns: auto 250px;
         }
     }
 }

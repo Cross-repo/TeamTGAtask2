@@ -206,13 +206,14 @@ h1 {
 
 @media screen and (min-width: 651px) {
   article.translation-conatiner {
+    width: calc(100% - 40px);
     max-width: 650px;
     display: -ms-grid;
     display: grid;
     -ms-grid-rows: none;
         grid-template-rows: none;
-    -ms-grid-columns: 400px 250px;
-        grid-template-columns: 400px 250px;
+    -ms-grid-columns: auto 250px;
+        grid-template-columns: auto 250px;
   }
 }
 
