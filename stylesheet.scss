@@ -177,3 +177,14 @@ h1{
     color: $primaryColor;
     text-align: center;
 }
+
+@media screen and (min-width: 651px){
+    article{
+        &.translation-conatiner{
+            max-width: 650px;
+            display: grid;
+            grid-template-rows: none;
+            grid-template-columns: 400px 250px;
+        }
+    }
+}

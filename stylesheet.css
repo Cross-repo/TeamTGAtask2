@@ -199,4 +199,16 @@ h1 {
   color: #162D7D;
   text-align: center;
 }
+
+@media screen and (min-width: 651px) {
+  article.translation-conatiner {
+    max-width: 650px;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: none;
+        grid-template-rows: none;
+    -ms-grid-columns: 400px 250px;
+        grid-template-columns: 400px 250px;
+  }
+}
 /*# sourceMappingURL=stylesheet.css.map */
