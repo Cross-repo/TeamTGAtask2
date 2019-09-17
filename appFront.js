@@ -1,3 +1,4 @@
+// Handle our data model
 const model = {
     languages:[
         {
@@ -50,4 +51,14 @@ const model = {
         }
     ],
     selectedLanguage:null,
+}
+
+// link data to view
+const controller = {
+    
+}
+
+// Our view to interact with the DOM
+const view = {
+
 }
