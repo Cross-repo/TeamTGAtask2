@@ -57,8 +57,11 @@ const model = {
 const controller = {
     //Let's declare the initial function
     //I prefer function though but since developers are the judge, they have the latest (chrome) browser hence arrow functions are compactable xx
-    init: ()=>{
-        
+    init: () =>{
+        //This function is my mini jQuery. it was selecting easy for. And yes, that's the fundamental of $ in jQuery in their Doc.
+        const $ = (selector, container)=>{
+            return (container || document).querySelector(selector);
+        }
     }
 }
 
