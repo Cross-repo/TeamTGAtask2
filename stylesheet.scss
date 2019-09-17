@@ -9,3 +9,8 @@ body{
     font-family: 'Open Sans', sans-serif;
     font-size: 14px; 
 }
+
+body, main, header, section, article{
+    display: flex;
+    flex-wrap: wrap;
+}
