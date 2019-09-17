@@ -5,6 +5,8 @@
     margin: 0;
 }
 
+$primaryColor: #162D7D;
+
 body{
     font-family: 'Open Sans', sans-serif;
     font-size: 14px; 
@@ -13,4 +15,19 @@ body{
 body, main, header, section, article{
     display: flex;
     flex-wrap: wrap;
+}
+
+header{
+    width: 100%;
+    div#logo-container{
+        a#logo{
+            text-decoration: none;
+            font-size: 40px;
+            font-family: 'Saira Stencil One', cursive;
+            color: #000;
+            span#logo-team-text{
+                display: none;
+            }
+        }
+    }
 }

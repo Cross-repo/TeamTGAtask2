@@ -16,4 +16,19 @@ body, main, header, section, article {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
+
+header {
+  width: 100%;
+}
+
+header div#logo-container a#logo {
+  text-decoration: none;
+  font-size: 40px;
+  font-family: 'Saira Stencil One', cursive;
+  color: #000;
+}
+
+header div#logo-container a#logo span#logo-team-text {
+  display: none;
+}
 /*# sourceMappingURL=stylesheet.css.map */
