@@ -158,6 +158,10 @@ article{
                 }
             }
 
+            div.input-container, input#loginBtn,{
+                max-width: 520px;
+                margin: auto;
+            }
         }
     }
 }

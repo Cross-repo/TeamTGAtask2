@@ -183,6 +183,11 @@ article.form-login-article form#login-form div.form-extra-function a.signup {
   color: #000;
 }
 
+article.form-login-article form#login-form div.input-container, article.form-login-article form#login-form input#loginBtn {
+  max-width: 520px;
+  margin: auto;
+}
+
 h1, h2, h3 {
   font-family: 'Open Sans', sans-serif;
 }
