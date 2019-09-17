@@ -65,6 +65,12 @@ const controller = {
         
         //Declare the element we need to change innerHTMlL
         this.selectedLanguageElem = $('h1#txt-select-language');
+        this.formTitleElem = $('h1#form-login-title');
+        this.userNameTextElem = $('p#label-username-text');
+        this.passwordTextElem = $('p#label-password-text');
+        this.inputLoginSubmit = $('input#loginBtn');
+        this.forgetPassword = $('a.forgot-password');
+        this.signup = $('a.signup');
     }
 }
 
