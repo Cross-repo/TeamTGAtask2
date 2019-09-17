@@ -71,6 +71,9 @@ const controller = {
         this.inputLoginSubmit = $('input#loginBtn');
         this.forgetPassword = $('a.forgot-password');
         this.signup = $('a.signup');
+
+        //Array of language btns
+        this.langBtns = document.querySelectorAll('button.translation');
     }
 }
 
