@@ -74,6 +74,11 @@ const controller = {
 
         //Array of language btns
         this.langBtns = document.querySelectorAll('button.translation');
+    },
+    
+    setSelectedLang: (lang)=>{
+        // set selected language
+        model.selectedLanguage = lang;
     }
 }
 
