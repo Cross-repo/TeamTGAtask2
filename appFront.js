@@ -62,6 +62,9 @@ const controller = {
         const $ = (selector, container)=>{
             return (container || document).querySelector(selector);
         }
+        
+        //Declare the element we need to change innerHTMlL
+        this.selectedLanguageElem = $('h1#txt-select-language');
     }
 }
 
