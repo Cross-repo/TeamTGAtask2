@@ -106,6 +106,10 @@ article.form-login-article form#login-form {
   border-radius: 8px;
 }
 
+article.form-login-article form#login-form div.input-container {
+  width: 100%;
+}
+
 h1, h2, h3 {
   font-family: 'Open Sans', sans-serif;
 }
