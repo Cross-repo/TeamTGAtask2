@@ -135,6 +135,15 @@ article.form-login-article form#login-form div.input-container label p {
   text-transform: uppercase;
 }
 
+article.form-login-article form#login-form div.input-container input {
+  width: calc(100% - 20px);
+  margin: 10px;
+  padding: 0.5rem 0px;
+  font-size: 1rem;
+  border: 0;
+  border-bottom: 1px solid rgba(22, 45, 125, 0.75);
+}
+
 h1, h2, h3 {
   font-family: 'Open Sans', sans-serif;
 }
