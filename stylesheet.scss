@@ -135,6 +135,29 @@ article{
                 margin: 20px auto;
             }
 
+            div.form-extra-function{
+                width: 100%;
+                display: flex;
+                flex-wrap: wrap;
+
+                a{
+                    width: 100%;
+                    text-align: center;
+                    font-size: 16px;
+                    margin: 20px auto;
+                    text-transform: capitalize;
+                    text-decoration: none;
+
+                    &.forgot-password{
+                        color: $primaryColor;
+                    }
+
+                    &.signup{
+                        color: #000;
+                    }
+                }
+            }
+
         }
     }
 }

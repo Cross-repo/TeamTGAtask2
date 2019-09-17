@@ -157,6 +157,32 @@ article.form-login-article form#login-form input#loginBtn {
   margin: 20px auto;
 }
 
+article.form-login-article form#login-form div.form-extra-function {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+article.form-login-article form#login-form div.form-extra-function a {
+  width: 100%;
+  text-align: center;
+  font-size: 16px;
+  margin: 20px auto;
+  text-transform: capitalize;
+  text-decoration: none;
+}
+
+article.form-login-article form#login-form div.form-extra-function a.forgot-password {
+  color: #162D7D;
+}
+
+article.form-login-article form#login-form div.form-extra-function a.signup {
+  color: #000;
+}
+
 h1, h2, h3 {
   font-family: 'Open Sans', sans-serif;
 }
