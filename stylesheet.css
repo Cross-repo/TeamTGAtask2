@@ -144,6 +144,19 @@ article.form-login-article form#login-form div.input-container input {
   border-bottom: 1px solid rgba(22, 45, 125, 0.75);
 }
 
+article.form-login-article form#login-form input#loginBtn {
+  background: #162D7D;
+  color: #fff;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 20px;
+  padding: 10px;
+  text-align: center;
+  text-transform: uppercase;
+  width: calc(100% - 30px);
+  margin: 20px auto;
+}
+
 h1, h2, h3 {
   font-family: 'Open Sans', sans-serif;
 }

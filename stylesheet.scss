@@ -121,6 +121,19 @@ article{
                     border-bottom: 1px solid rgba($primaryColor, 0.75);
                 }
             }
+            
+            input#loginBtn{
+                background: $primaryColor;
+                color: #fff;
+                border-radius: 5px;
+                font-weight: bold;
+                font-size: 20px;
+                padding: 10px;
+                text-align: center;
+                text-transform: uppercase;
+                width: calc(100% - 30px);
+                margin: 20px auto;
+            }
 
         }
     }
