@@ -27,6 +27,7 @@ header div#logo-container a#logo {
   font-size: 40px;
   font-family: 'Saira Stencil One', cursive;
   color: #000;
+  padding: 10px;
 }
 
 header div#logo-container a#logo span#logo-team-text {
