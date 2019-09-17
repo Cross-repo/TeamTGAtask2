@@ -90,6 +90,22 @@ article.translation-conatiner div.container div.translation-btns button.translat
   color: #162D7D;
 }
 
+article.form-login-article form#login-form {
+  width: calc(100% - 40px);
+  max-width: 650px;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 10px 0px;
+  background: #FFFFFF;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), inset 0px -5px 0px rgba(22, 45, 125, 0.75);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), inset 0px -5px 0px rgba(22, 45, 125, 0.75);
+  border-radius: 8px;
+}
+
 h1, h2, h3 {
   font-family: 'Open Sans', sans-serif;
 }
