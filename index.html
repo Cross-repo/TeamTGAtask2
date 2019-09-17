@@ -18,21 +18,35 @@
     <![endif]-->
 
     <header>
-
+        <div id="logo-container">
+            <a href="" id="logo">
+                <span id="logo-team-text">Team </span>TGA
+            </a>
+        </div>
     </header>
     <main>
-        <form action="">
-            <h1>Login</h1>
-            <div class="input-container">
-                <label for="username">
-
-                </label>
-                <input type="text" id="username" autofocus>
+        <section class="login-section">
+            <form action="" id="login-form">
+                <h1 class="form-title">Login</h1>
+                <div class="input-container input-container__username">
+                    <label for="username">
+                        <i class="far fa-user"></i> Email or Username
+                    </label>
+                    <input type="text" id="user__name" autofocus>
+                </div>
+                <div class="input-container input-container__password">
+                    <label for="username">
+                        <i class="fas fa-lock"></i> Password
+                    </label>
+                    <input type="password" id="user__password">
+                </div>
+                <input type="submit" value="login">
+            </form>
+            <div class="form-extra-function">
+                <a href="" class="forgot-password" role="button" tabindex="-1">forgot password?</a>
+                <a href="" class="signup" role="button" tabindex="-1">Don’t have an account yet?</a>
             </div>
-            <div class="input-container">
-
-            </div>
-        </form>
+        </section>
     </main>
   </body>
 </html>
