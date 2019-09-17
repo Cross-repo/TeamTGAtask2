@@ -93,6 +93,24 @@ article{
 
             div.input-container{
                 width: 100%;
+                display: flex;
+                flex-wrap: wrap;
+
+                label{
+                    display: flex;
+                    flex-wrap: wrap;
+                    width: 100%;
+                    margin: 10px;
+                    i, p{
+                        margin: auto 5px;
+                        font-size: 14px;
+                        color: $primaryColor;
+                    }
+
+                    p{
+                        text-transform: uppercase;
+                    }
+                }
             }
 
         }

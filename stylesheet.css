@@ -108,6 +108,31 @@ article.form-login-article form#login-form {
 
 article.form-login-article form#login-form div.input-container {
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+article.form-login-article form#login-form div.input-container label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+  margin: 10px;
+}
+
+article.form-login-article form#login-form div.input-container label i, article.form-login-article form#login-form div.input-container label p {
+  margin: auto 5px;
+  font-size: 14px;
+  color: #162D7D;
+}
+
+article.form-login-article form#login-form div.input-container label p {
+  text-transform: uppercase;
 }
 
 h1, h2, h3 {
