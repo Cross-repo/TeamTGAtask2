@@ -71,7 +71,7 @@ const controller = {
         const lang = model.languages.find(l=> l.name === title.toLowerCase())
         console.log('Clicked btn title',lang);
         
-        if(lang === undefined || lang === null){
+        if(lang !== undefined || lang !== null){
             controller.setSelectedLang(lang);
         }
     }
