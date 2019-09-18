@@ -107,6 +107,10 @@ const view = {
                 controller.btnLang(title);
             })
         });
-    }
+    },
 
+    render: () =>{
+        //This updates  our DOM for us
+        
+    }
 }
