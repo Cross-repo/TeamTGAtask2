@@ -81,6 +81,23 @@ const controller = {
 const view = {
     init: () =>{
         //This declares the inital function we want our view to carry out
+
+        //This function is my mini jQuery. it was selecting easy for. And yes, that's the fundamental of $ in jQuery in their Doc.
+        const $ = (selector, container)=>{
+            return (container || document).querySelector(selector);
+        }
+        
+        //Declare the element we need to change innerHTMlL
+        this.selectedLanguageElem = $('h1#txt-select-language');
+        this.formTitleElem = $('h1#form-login-title');
+        this.userNameTextElem = $('p#label-username-text');
+        this.passwordTextElem = $('p#label-password-text');
+        this.inputLoginSubmit = $('input#loginBtn');
+        this.forgetPassword = $('a.forgot-password');
+        this.signup = $('a.signup');
+
+        //Array of language btns
+        this.langBtns = document.querySelectorAll('button.translation');
     }
 
 }
