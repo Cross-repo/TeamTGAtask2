@@ -84,7 +84,7 @@ const controller = {
     defaultSelectedLang: () =>{
         //Set and return English selected Language
         model.selectedLanguage = model.languages[0];
-        controller.getSelectedLang();
+        return model.selectedLanguage;
     }
 }
 
