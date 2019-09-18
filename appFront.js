@@ -9,7 +9,8 @@ const model = {
             select_language:"Select Language",
             formTitle:"Login Details",
             forgot_password:"Forgot Password?",
-            signup:"Don't have an account yet?"
+            signup:"Don't have an account yet?",
+            lang: "en"
         },
         {
             name: "espanol",
@@ -19,7 +20,8 @@ const model = {
             select_language:"Seleccione el idioma",
             formTitle:"detalles de registro",
             forgot_password:"¿Se te olvidó tu contraseña?",
-            signup:"¿Aún no tienes una cuenta?"
+            signup:"¿Aún no tienes una cuenta?",
+            lang: "es"
         },
         {
             name: "french",
@@ -29,7 +31,8 @@ const model = {
             select_language:"Choisir la langue",
             formTitle:"détails de connexion",
             forgot_password:"Mot de passe oublié?",
-            signup:"Vous n'avez pas encore de compte?"
+            signup:"Vous n'avez pas encore de compte?",
+            lang: "fr"
         },{
             name: "german",
             login:"Einloggen",
@@ -38,7 +41,8 @@ const model = {
             select_language:"Sprache auswählen",
             formTitle:"Login-Daten",
             forgot_password:"Passwort vergessen?",
-            signup:"Sie haben noch keinen Account?"
+            signup:"Sie haben noch keinen Account?",
+            lang: "de"
         },{
             name: "chinesse",
             login:"登錄",
@@ -47,7 +51,8 @@ const model = {
             select_language:"選擇語言",
             formTitle:"登錄詳細信息",
             forgot_password:"忘記密碼？",
-            signup:"還沒有賬號？"
+            signup:"還沒有賬號？",
+            lang: "zh-Hant"
         }
     ],
     selectedLanguage:null,
