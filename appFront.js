@@ -146,3 +146,5 @@ const view = {
         this.signup.innerHTML = selectedLang.signup;
     }
 }
+
+controller.init();
