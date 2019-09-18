@@ -63,6 +63,10 @@ const controller = {
     //Let's declare the initial function
     //I prefer function though but since developers are the judge, they have the latest (chrome) browser hence arrow functions are compactable xx
     init: () =>{
+        if (localStorage.teamTGA) {
+            controller.convertLocalToModel();
+            console.log('localStorage', localStorage);
+        }
         view.init();
         view.render();
     },
@@ -91,7 +95,28 @@ const controller = {
         //Set and return English selected Language
         model.selectedLanguage = model.languages[0];
         return model.selectedLanguage;
-    }
+    },
+
+    // Let's consider making use of localStorage aye
+    addModelToLocal: function(){
+        const obj = JSON.stringify(model);
+        localStorage.setItem('teamTGA', obj);
+        console.log('Moved in', localStorage);
+    },
+
+    convertLocalToModel: function(){
+        //This function is only called when we have the same data, so all we need to do is get the stored data and render.
+        if(localStorage.teamTGA){
+            const modelObj = JSON.parse(localStorage.getItem('teamTGA'));
+            console.log('modelObj', modelObj);
+            for (const key in model) {
+                model[key] = modelObj[key];
+            }
+        } else{
+            //Not in storage
+            console.log('%cError' + '%c Not Found in Local Storage', "background-color: red; color: white", "color: red");
+        }
+    },
 }
 
 // Our view to interact with the DOM
@@ -123,6 +148,9 @@ const view = {
                 const title = btn.title;
                 console.log('title of btn on click', title);
                 controller.btnLang(title);
+
+                //Update localStorage
+                controller.addModelToLocal();
                 view.render();
             })
         });
@@ -130,6 +158,7 @@ const view = {
 
     render: () =>{
         //This updates  our DOM for us
+        console.log('render', model);
         const selectedLang = controller.getSelectedLang() || controller.defaultSelectedLang();
 
         //Set selected btn
