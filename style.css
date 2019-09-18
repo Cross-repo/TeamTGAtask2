@@ -1,0 +1,108 @@
+body{
+    background: #E5E5E5;
+}
+.container{
+    /* width: 50%; */
+    margin: 100px auto
+}
+#left-div{
+    background: #162D7D;
+    font-family: Saira Stencil One;
+    font-style: normal;
+    font-weight: normal;
+    padding-top: 150px;
+    font-size: 30px;
+    color: #FFFFFF;
+}
+#right-div{
+    background: #FFFFFF;
+}
+.langs{
+    margin-left: 160px;
+    height: 20px;
+}
+ul li{
+    background: #EFEFEF;
+    display: inline;
+    font-size: 7px;
+    border: 1px solid #C4C4C4;
+    margin-left: -5px;
+    padding: 5px
+}
+li.active{
+    color: #FFFFFF;
+    background: #162D7D;
+    
+}
+a{
+   
+    font-size: 10px
+}
+.underline{
+    text-decoration: underline;
+}
+#no-account{
+    color: black
+}
+#no-account:hover{
+    text-decoration: none;
+}
+#password-reset{
+    color: red
+}
+/* nav button.nav-btn{
+    display: none
+} */
+
+@media only screen and  (max-width: 385px){
+    .container{
+        width: 75%;
+    }
+    #left-div{
+        display: none
+    }
+    
+    .langs{
+        margin-left: 60px;
+    }
+    
+    
+}
+
+@media only screen and (max-width: 414px){
+    .container{
+        width: 80%;
+    }
+    #left-div{
+        display: none
+    }
+}
+
+@media screen and (min-width: 578px){
+    .container{
+        width: 80%;
+    }
+    .langs{
+        margin-left: 90px;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .container{
+        width: 85%;
+    }
+    .langs{
+        margin-left: 180px;
+    }
+}
+
+@media screen and (min-width: 1024px){
+    .container{
+        width: 65%;
+    }
+    .langs{
+        margin-left: 180px;
+    }
+}
+
+
