@@ -116,6 +116,14 @@ const view = {
 
     render: () =>{
         //This updates  our DOM for us
-        
+        const selectedLang = controller.getSelectedLang();
+
+        this.selectedLanguageElem.innerHTML = selectedLang.select_language;
+        this.formTitleElem.innerHTML = selectedLang.formTitle;
+        this.userNameTextElem.innerHTML = selectedLang.username;
+        this.passwordTextElem.innerHTML = selectedLang.password;
+        this.inputLoginSubmit.innerHTML = selectedLang.login;
+        this.forgetPassword.innerHTML = selectedLang.forgot_password;
+        this.signup.innerHTML = selectedLang.signup;
     }
 }
