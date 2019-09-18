@@ -65,7 +65,7 @@ const controller = {
     init: () =>{
         if (localStorage.teamTGA) {
             controller.convertLocalToModel();
-            console.log('localStorage', localStorage);
+            // console.log('localStorage', localStorage);
         }
         view.init();
         view.render();
@@ -79,7 +79,7 @@ const controller = {
     btnLang: (title) => {
         // From btn title get lang 
         const lang = model.languages.find(l=> l.name === title.toLowerCase())
-        console.log('Clicked btn title',lang);
+        // console.log('Clicked btn title',lang);
         
         if(lang !== undefined || lang !== null){
             controller.setSelectedLang(lang);
@@ -101,20 +101,20 @@ const controller = {
     addModelToLocal: function(){
         const obj = JSON.stringify(model);
         localStorage.setItem('teamTGA', obj);
-        console.log('Moved in', localStorage);
+        // console.log('Moved in', localStorage);
     },
 
     convertLocalToModel: function(){
         //This function is only called when we have the same data, so all we need to do is get the stored data and render.
         if(localStorage.teamTGA){
             const modelObj = JSON.parse(localStorage.getItem('teamTGA'));
-            console.log('modelObj', modelObj);
+            // console.log('modelObj', modelObj);
             for (const key in model) {
                 model[key] = modelObj[key];
             }
         } else{
             //Not in storage
-            console.log('%cError' + '%c Not Found in Local Storage', "background-color: red; color: white", "color: red");
+            // console.log('%cError' + '%c Not Found in Local Storage', "background-color: red; color: white", "color: red");
         }
     },
 }
@@ -146,7 +146,7 @@ const view = {
         langBtns.forEach(btn=>{
             btn.addEventListener('click', ()=>{
                 const title = btn.title;
-                console.log('title of btn on click', title);
+                // console.log('title of btn on click', title);
                 controller.btnLang(title);
 
                 //Update localStorage
@@ -158,7 +158,7 @@ const view = {
 
     render: () =>{
         //This updates  our DOM for us
-        console.log('render', model);
+        // console.log('render', model);
         const selectedLang = controller.getSelectedLang() || controller.defaultSelectedLang();
 
         //Set selected btn
