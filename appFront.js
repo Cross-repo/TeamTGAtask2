@@ -116,6 +116,7 @@ const view = {
                 const title = btn.title;
                 console.log('title of btn on click', title);
                 controller.btnLang(title);
+                view.render();
             })
         });
     },
