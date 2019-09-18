@@ -74,6 +74,11 @@ const controller = {
         if(lang !== undefined || lang !== null){
             controller.setSelectedLang(lang);
         }
+    },
+
+    getSelectedLang: () =>{
+        //Get selected Language
+        return model.selectedLanguage;
     }
 }
 
