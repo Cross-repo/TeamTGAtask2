@@ -121,11 +121,10 @@ article.form-login-article form#login-form div.input-container {
 }
 
 article.form-login-article form#login-form div.input-container label {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 24px auto;
+      grid-template-columns: 24px auto;
   width: 100%;
   margin: 10px;
 }

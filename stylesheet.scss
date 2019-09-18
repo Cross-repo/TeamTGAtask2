@@ -102,8 +102,8 @@ article{
                 flex-wrap: wrap;
 
                 label{
-                    display: flex;
-                    flex-wrap: wrap;
+                    display: grid;
+                    grid-template-columns: 24px auto;
                     width: 100%;
                     margin: 10px;
                     i, p{
