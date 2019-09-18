@@ -7,7 +7,7 @@
     <!-- app manifest file -->
     <link rel="manifest" href="appManifest.json"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Login Page</title>
+    <title>Signup Page</title>
     <link rel="apple-touch-icon" href="logo.png">
     <!-- fontawesome CDN -->
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
@@ -38,35 +38,41 @@
                 <div class="container">
                     <div class="translation-btns">
                         <button id="translate-english" class="translation english" title = "English">eng</button>
-                        <button id="translate-espanol" class="translation espanol" title = "Espanol">esp</button>
+                        <button id="translate-espanol" class="translation espanol spanish" title = "Espanol">esp</button>
                         <button id="translate-french" class="translation french" title = "French">fra</button>
                         <button id="translate-german" class="translation german" title = "German">ger</button>
-                        <button id="translate-chinesse" class="translation chinesse" title = "Chinesse">chi</button>
+                        <button id="translate-chinesse" class="translation chinesse chinese" title = "Chinesse">chi</button>
                     </div>
                 </div>
             </article>
             <article class="form-login-article">
                 <form action="" id="login-form">
-                    <h1 id="form-login-title" class="form-title">Login Details</h1>
+                    <h1 id="form-login-title" class="form-title">Sign Up Details</h1>
                     <div class="input-container input-container__username">
                         <label for="user__name">
                             <i class="far fa-user"></i>
-                            <p id="label-username-text">Email or Username</p>
+                            <p id="label-username-text" class="username-text">Fullname</p>
                         </label>
-                        <input type="text" id="user__name" autofocus  autocomplete="username">
+                        <input type="text" id="user__name" autofocus  autocomplete="username" required>
+                    </div>
+                    <div class="input-container input-container__username">
+                        <label for="user__name">
+                            <i class="far fa-user"></i>
+                            <p id="label-username-text" class="email">Email Address</p>
+                        </label>
+                        <input type="email" id="user__name" autofocus  autocomplete="username" required>
                     </div>
                     <div class="input-container input-container__password">
                         <label for="user__password">
                             <i class="fas fa-lock"></i>
-                            <p id="label-password-text">Password</p>                            
+                            <p id="label-password-text" class="password-text">Password</p>                            
                         </label>
-                        <input type="password" id="user__password"  autocomplete="current-password">
+                        <input type="password" id="user__password"  autocomplete="current-password" required>
                     </div>
-                    <input id="loginBtn" type="submit" value="login">
+                    <input id="loginBtn" type="submit" value="Sign Up" class="button">
                     <div class="form-extra-function">
-                        <a href="" class="forgot-password" role="button" tabindex="-1">forgot password?</a>
-                        <p href="" class="signup" role="button" tabindex="-1">Don’t have an account yet?</p>
-                        <a href="signup.html">Register</a>
+                        <p class="signup left-float" role="button" tabindex="-1">Already have an account?</p>
+                        <a class="sup" href="index.html">Login</a>
                     </div>
                 </form>
             </article>
@@ -74,6 +80,6 @@
     </main>
 
     <!-- the frontend javascript for this page -->
-    <script src="appFront.js"></script>
+    <script src="sign-up.js"></script>
 </body>
 </html>
