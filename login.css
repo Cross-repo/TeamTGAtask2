@@ -1,0 +1,106 @@
+body{
+
+	margin: 0;
+	background: #f2f2f2;
+	padding: 0;
+}
+
+.centered{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+#leftside, #rightside{
+	position: fixed;
+	top: 0;
+	height: 100%;
+	width: 50%;
+	position: fixed;	
+}
+
+#leftside {
+	background: #00008B;
+	left:0;
+	box-sizing: border-box;
+	padding: 50px;
+}
+
+#rightside {
+	background: white;
+	right: 0;
+	padding: 20px;
+}
+
+.login-box{
+	position: relative;
+	margin: 5%;
+	height: 400px;
+	background:#ffffff;
+	text-align: center;
+	padding-top: 20%;
+}
+
+
+h1{font-weight: bold;
+	font-size: 15vh;
+	text-align: 20vh;
+	color: white;
+	font-family: Saira Stencil One;
+	padding-top: 25%;
+}
+
+h2{
+	font-weight: bold;
+	font-family: Product Sans;
+}
+
+input{
+	width: 50%;
+	border: 1px solid #A9A9A9;
+	border-radius: 0.5px;
+	box-sizing: border-box;
+	padding: 10px;
+}
+
+button[type=button]{
+	float: right;
+	padding-top: 5px;
+	cursor: pointer;
+}
+
+button[type=button]:active{
+	color:blue; 
+}
+
+
+button[type=submit]{
+	background: #00008B;
+	color: white;
+	width: 50%;
+	padding: 10px;
+	border:1px;
+	border-radius: 5px;
+	cursor: pointer;
+	font-weight: 400;
+
+}
+
+p#register{
+float:left;	
+}
+
+p#forgot-password{
+	float:right;
+}
+
+#register-form{
+	position: relative;
+	margin: 5%;
+	height: 400px;
+	background:#ffffff;
+	text-align: center;
+	padding-top: 10%;
+}
+
