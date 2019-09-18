@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Sign Up</title>
+  <link rel="stylesheet" href="signup.css">
+</head>
+<body>
+  <main>
+  <section class=left-container>
+    <h1>TEAM TGA</h1>
+    <p class=left-p>Open an account with us</p>
+  </section>
+  <section class=right-container>
+    <div class="float">
+      <span class=inner-p>Select Language:</span>
+      <ul>
+        <li class="english">ENG</li>
+        <li class="spanish">ESP</li>
+        <li class="french">FRE</li>
+        <li class="german">GER</li>
+        <li class="chi chinese">CHI</li>
+      </ul>
+    </div>
+
+    <h2>SIGN UP DETAILS</h2>
+    <form action="" method="POST" class=signup-form>
+      <input type="text" name="fullname" class="username-text" placeholder="Full Name" required>
+      <p id="name-error">E</p>
+      <input type="email" name="email" class="email" placeholder="Email Address" required>
+      <p id="email-error">E</p>
+      <input type="password" name="password" class="password-text" placeholder="Password" required>
+      <p id="password-error">E</p>
+      <button type="submit" name="submit">Sign Up</button>
+    </form>
+    <div class="bottom">
+      <div class="inner-flex">
+          <p class="left-float">Already have an account?</p>
+          <p class="after"><a href="../index.html">Login</a></p>
+      </div>
+    </div>  
+  </section>
+  </main>
+  <script src="../js/sign-up.js"></script>
+</body>
+</html>
