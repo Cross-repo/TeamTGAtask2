@@ -89,6 +89,8 @@ article.translation-conatiner div.container div.translation-btns button.translat
 article.translation-conatiner div.container div.translation-btns button.translation.selected {
   background-color: #fff;
   color: #162D7D;
+  -webkit-transition: ease-in 0.5s;
+  transition: ease-in 0.5s;
 }
 
 article.form-login-article form#login-form {

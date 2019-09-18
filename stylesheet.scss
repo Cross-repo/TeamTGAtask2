@@ -74,6 +74,7 @@ article{
                     &.selected{
                         background-color: #fff;
                         color: $primaryColor;
+                        transition: ease-in 0.5s;
                     }
                 }
             }
