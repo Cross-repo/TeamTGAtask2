@@ -112,6 +112,7 @@ const view = {
         this.inputLoginSubmit = $('input#loginBtn');
         this.forgetPassword = $('a.forgot-password');
         this.signup = $('a.signup');
+        this.html = $('html');
 
         //Array of language btns
         this.langBtns = document.querySelectorAll('button.translation');
@@ -149,6 +150,7 @@ const view = {
         this.inputLoginSubmit.innerHTML = selectedLang.login;
         this.forgetPassword.innerHTML = selectedLang.forgot_password;
         this.signup.innerHTML = selectedLang.signup;
+        this.html.setAttribute('lang',selectedLang.lang);
     }
 }
 
