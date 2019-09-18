@@ -124,6 +124,16 @@ const view = {
         //This updates  our DOM for us
         const selectedLang = controller.getSelectedLang() || controller.defaultSelectedLang();
 
+        //Set selected btn
+        this.langBtns.forEach(btn=>{
+            //Remove selected class on each 
+            btn.classList.remove('selected');
+
+            if (btn.title.toLowerCase() === selectedLang.name) {
+                btn.classList.add('selected');
+            }
+        });
+
         //console.log(selectedLang);
         this.selectedLanguageElem.innerHTML = selectedLang.select_language;
         this.formTitleElem.innerHTML = selectedLang.formTitle;
