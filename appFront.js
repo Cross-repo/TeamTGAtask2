@@ -98,6 +98,15 @@ const view = {
 
         //Array of language btns
         this.langBtns = document.querySelectorAll('button.translation');
+
+        // setting click function on each button 
+        langBtns.forEach(btn=>{
+            btn.addEventListener('click', ()=>{
+                const title = btn.title;
+                console.log('title of btn on click', title);
+                controller.btnLang(title);
+            })
+        });
     }
 
 }
