@@ -122,8 +122,9 @@ const view = {
 
     render: () =>{
         //This updates  our DOM for us
-        const selectedLang = controller.getSelectedLang();
+        const selectedLang = controller.getSelectedLang() || controller.defaultSelectedLang();
 
+        //console.log(selectedLang);
         this.selectedLanguageElem.innerHTML = selectedLang.select_language;
         this.formTitleElem.innerHTML = selectedLang.formTitle;
         this.userNameTextElem.innerHTML = selectedLang.username;
