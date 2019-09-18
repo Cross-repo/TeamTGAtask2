@@ -58,7 +58,8 @@ const controller = {
     //Let's declare the initial function
     //I prefer function though but since developers are the judge, they have the latest (chrome) browser hence arrow functions are compactable xx
     init: () =>{
-        
+        view.init();
+        view.render();
     },
 
     setSelectedLang: (lang)=>{
