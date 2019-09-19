@@ -8,10 +8,13 @@ const model = {
             password:"Password",
             emailAddress: "Email Address",
             select_language:"Select Language",
-            formTitle:"Login Details",
+            formTitleLogin:"Login Details",
             forgot_password:"Forgot Password?",
             signup:"Don't have an account yet?",
-            lang: "en"
+            lang: "en",
+            register:"Register",
+            formTitleSignUp:"Sign Up Details",
+            already:"Already have an account?"
         },
         {
             name: "espanol",
@@ -20,10 +23,13 @@ const model = {
             password:"Contraseña",
             emailAddress: "Dirección de correo electrónico",
             select_language:"Seleccione el idioma",
-            formTitle:"detalles de registro",
+            formTitleLogin:"detalles de registro",
             forgot_password:"¿Se te olvidó tu contraseña?",
             signup:"¿Aún no tienes una cuenta?",
-            lang: "es"
+            lang: "es",
+            register:"Registro",
+            formTitleSignUp:"Detalles de registro",
+            already:"¿Ya tienes una cuenta?"
         },
         {
             name: "french",
@@ -32,10 +38,13 @@ const model = {
             password:"Mot de passe",
             emailAddress: "Adresse e-mail",
             select_language:"Choisir la langue",
-            formTitle:"détails de connexion",
+            formTitleLogin:"détails de connexion",
             forgot_password:"Mot de passe oublié?",
             signup:"Vous n'avez pas encore de compte?",
-            lang: "fr"
+            lang: "fr",
+            register:"S'inscrire",
+            formTitleSignUp:"Détails d'inscription",
+            already:"Vous avez déjà un compte?"
         },{
             name: "german",
             login:"Einloggen",
@@ -43,10 +52,13 @@ const model = {
             password:"Passwort",
             emailAddress: "E-Mail-Addresse",
             select_language:"Sprache auswählen",
-            formTitle:"Login-Daten",
+            formTitleLogin:"Login-Daten",
             forgot_password:"Passwort vergessen?",
             signup:"Sie haben noch keinen Account?",
-            lang: "de"
+            lang: "de",
+            register:"Registrieren",
+            formTitleSignUp:"Anmeldedetails",
+            already:"Hast du schon ein Konto?"
         },{
             name: "chinesse",
             login:"登錄",
@@ -54,10 +66,13 @@ const model = {
             password:"密碼",
             emailAddress: "電子郵件地址",
             select_language:"選擇語言",
-            formTitle:"登錄詳細信息",
+            formTitleLogin:"登錄詳細信息",
             forgot_password:"忘記密碼？",
             signup:"還沒有賬號？",
-            lang: "zh-Hant"
+            lang: "zh-Hant",
+            register:"寄存器",
+            formTitleSignUp:"註冊詳細信息",
+            already:"已經有賬號？"
         }
     ],
     selectedLanguage:null,
@@ -144,11 +159,14 @@ const view = {
         //Declare the element we need to change innerHTMlL
         this.selectedLanguageElem = $('h1#txt-select-language');
         this.formLoginTitleElem = $('h1#form-login-title.login-details');
+        this.formSignUpTitleElem = $('h1#form-login-title.sign-up-details');
         this.userNameTextElem = $('p#label-username-text');
         this.userEmailTextElem = $('p#label-useremail-text');
         this.passwordTextElem = $('p#label-password-text');
         this.inputLoginSubmit = $('input#loginBtn');
         this.loginTxt = $('a.sup');
+        this.registerTxt = $('a.registerbtn');
+        this.alreadyTxt = $('p.already');
         this.forgetPassword = $('a.forgot-password');
         this.signup = $('p.signup');
         this.html = $('html');
@@ -193,7 +211,11 @@ const view = {
         }
 
         if (this.formLoginTitleElem) {
-            this.formLoginTitleElem.innerHTML = selectedLang.formTitle;
+            this.formLoginTitleElem.innerHTML = selectedLang.formTitleLogin;
+        }
+
+        if (this.formSignUpTitleElem) {
+            this.formSignUpTitleElem.innerHTML = selectedLang.formTitleSignUp;
         }
 
         if (this.userNameTextElem) {
@@ -214,6 +236,14 @@ const view = {
 
         if (this.loginTxt) {
             this.loginTxt.innerHTML = selectedLang.login;
+        }
+
+        if (this.registerTxt) {
+            this.registerTxt.innerHTML = selectedLang.register;
+        }
+
+        if (this.alreadyTxt) {
+            this.alreadyTxt.innerHTML = selectedLang.already;
         }
 
         if (this.forgetPassword) {
