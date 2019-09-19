@@ -185,15 +185,44 @@ const view = {
         });
 
         //console.log(selectedLang);
-        this.selectedLanguageElem.innerHTML = selectedLang.select_language;
-        this.formTitleElem.innerHTML = selectedLang.formTitle;
-        this.userNameTextElem.innerHTML = selectedLang.username;
-        this.userEmailTextElem.innerHTML = selectedLang.emailAddress;
-        this.passwordTextElem.innerHTML = selectedLang.password;
-        this.inputLoginSubmit.innerHTML = selectedLang.login;
-        this.forgetPassword.innerHTML = selectedLang.forgot_password;
-        this.signup.innerHTML = selectedLang.signup;
-        this.html.setAttribute('lang',selectedLang.lang);
+
+        //Wrapping with if condition reduces chances of error/break by confirming elem exist then mplement.
+        if (this.selectedLanguageElem) {
+            this.selectedLanguageElem.innerHTML = selectedLang.select_language;
+        }
+
+        if (this.formTitleElem) {
+            this.formTitleElem.innerHTML = selectedLang.formTitle;
+        }
+
+        if (this.userNameTextElem) {
+            this.userNameTextElem.innerHTML = selectedLang.username;
+        }
+
+        if (this.userEmailTextElem) {
+            this.userEmailTextElem.innerHTML = selectedLang.emailAddress;
+        }
+
+        if (this.passwordTextElem) {
+            this.passwordTextElem.innerHTML = selectedLang.password;
+        }
+
+        if (this.inputLoginSubmit) {
+            this.inputLoginSubmit.value = selectedLang.login;
+        }
+
+        if (this.forgetPassword) {
+            this.forgetPassword.innerHTML = selectedLang.forgot_password;
+        }
+
+        if (this.signup) {
+            this.signup.innerHTML = selectedLang.signup;
+        }
+
+        if (this.html) {
+            this.html.setAttribute('lang',selectedLang.lang);
+        }
+
     }
 }
 
