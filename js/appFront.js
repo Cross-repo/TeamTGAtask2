@@ -148,6 +148,7 @@ const view = {
         this.userEmailTextElem = $('p#label-useremail-text');
         this.passwordTextElem = $('p#label-password-text');
         this.inputLoginSubmit = $('input#loginBtn');
+        this.loginTxt = $('a.sup');
         this.forgetPassword = $('a.forgot-password');
         this.signup = $('p.signup');
         this.html = $('html');
@@ -209,6 +210,10 @@ const view = {
 
         if (this.inputLoginSubmit) {
             this.inputLoginSubmit.value = selectedLang.login;
+        }
+
+        if (this.loginTxt) {
+            this.loginTxt.innerHTML = selectedLang.login;
         }
 
         if (this.forgetPassword) {
