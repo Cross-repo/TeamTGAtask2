@@ -117,7 +117,8 @@ const controller = {
         //This function is only called when we have the same data, so all we need to do is get the stored data and render.
         if(localStorage.teamTGA_selectedLanguage){
             const modelLanguage = localStorage.getItem('teamTGA_selectedLanguage');
-            const theSelectedLang = model.languages.find(l=>l.name === modelLanguage);
+            // const theSelectedLang = model.languages.find(l=>l.name === modelLanguage);
+            const theSelectedLang = controller.btnLang(modelLanguage); //trying to see if it can be DRY
             console.log('setLang', theSelectedLang);
             if (theSelectedLang != undefined || theSelectedLang != null) {
                 controller.setSelectedLang(theSelectedLang);
