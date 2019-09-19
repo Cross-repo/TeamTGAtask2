@@ -149,7 +149,7 @@ const view = {
         this.passwordTextElem = $('p#label-password-text');
         this.inputLoginSubmit = $('input#loginBtn');
         this.forgetPassword = $('a.forgot-password');
-        this.signup = $('a.signup');
+        this.signup = $('p.signup');
         this.html = $('html');
 
         //Array of language btns
