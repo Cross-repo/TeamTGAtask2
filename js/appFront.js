@@ -68,9 +68,9 @@ const controller = {
     //Let's declare the initial function
     //I prefer function though but since developers are the judge, they have the latest (chrome) browser hence arrow functions are compactable xx
     init: () =>{
-        if (localStorage.teamTGA) {
+        //check if a Language is set
+        if(localStorage.teamTGA_selectedLanguage){
             controller.convertLocalToModel();
-            // console.log('localStorage', localStorage);
         }
         view.init();
         view.render();
@@ -104,22 +104,28 @@ const controller = {
 
     // Let's consider making use of localStorage aye
     addModelToLocal: function(){
-        const obj = JSON.stringify(model);
-        localStorage.setItem('teamTGA', obj);
-        // console.log('Moved in', localStorage);
+        //Clear all old data
+        localStorage.clear()
+
+        // then add these
+        const obj = model.selectedLanguage.name;
+        localStorage.setItem('teamTGA_selectedLanguage', obj);
+        console.log('Moved in', localStorage);
     },
 
     convertLocalToModel: function(){
         //This function is only called when we have the same data, so all we need to do is get the stored data and render.
-        if(localStorage.teamTGA){
-            const modelObj = JSON.parse(localStorage.getItem('teamTGA'));
-            // console.log('modelObj', modelObj);
-            for (const key in model) {
-                model[key] = modelObj[key];
+        if(localStorage.teamTGA_selectedLanguage){
+            const modelLanguage = localStorage.getItem('teamTGA_selectedLanguage');
+            const theSelectedLang = model.languages.find(l=>l.name === modelLanguage);
+            console.log('setLang', theSelectedLang);
+            if (theSelectedLang != undefined || theSelectedLang != null) {
+                controller.setSelectedLang(theSelectedLang);
             }
         } else{
             //Not in storage
-            // console.log('%cError' + '%c Not Found in Local Storage', "background-color: red; color: white", "color: red");
+            // controller.defaultSelectedLang();
+            console.log('%cError' + '%c No set Language in Local Storage', "background-color: red; color: white", "color: red");
         }
     },
 }
