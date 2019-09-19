@@ -185,8 +185,15 @@ article.form-login-article form#login-form div.form-extra-function a.forgot-pass
   color: #162D7D;
 }
 
-article.form-login-article form#login-form div.form-extra-function a.signup {
+article.form-login-article form#login-form div.form-extra-function p.signup, article.form-login-article form#login-form div.form-extra-function p.already {
+  width: 100%;
+  text-align: center;
+  font-size: 16px;
+  margin: 20px auto;
+  text-transform: capitalize;
+  text-decoration: none;
   color: #000;
+  margin-bottom: 0px;
 }
 
 article.form-login-article form#login-form div.input-container, article.form-login-article form#login-form input#loginBtn {
