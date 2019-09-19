@@ -143,7 +143,7 @@ const view = {
         
         //Declare the element we need to change innerHTMlL
         this.selectedLanguageElem = $('h1#txt-select-language');
-        this.formTitleElem = $('h1#form-login-title');
+        this.formLoginTitleElem = $('h1#form-login-title.login-details');
         this.userNameTextElem = $('p#label-username-text');
         this.userEmailTextElem = $('p#label-useremail-text');
         this.passwordTextElem = $('p#label-password-text');
@@ -192,8 +192,8 @@ const view = {
             this.selectedLanguageElem.innerHTML = selectedLang.select_language;
         }
 
-        if (this.formTitleElem) {
-            this.formTitleElem.innerHTML = selectedLang.formTitle;
+        if (this.formLoginTitleElem) {
+            this.formLoginTitleElem.innerHTML = selectedLang.formTitle;
         }
 
         if (this.userNameTextElem) {
